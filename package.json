@@ -1,0 +1,37 @@
+{
+  "name": "electron-updater",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/poursal/electron-updater",
+  "author": {
+    "name": "V P",
+    "email": "poursal@gmail.com"
+  },
+  "devDependencies": {
+    "electron": "^7.1.5",
+    "electron-builder": "^21.2.0",
+    "electron-notarize": "^0.2.1"
+  },
+  "dependencies": {
+    "electron-log": "^4.0.0",
+    "electron-updater": "^4.2.0"
+  },
+  "build": {
+    "appId": "com.oratush.app",
+    "artifactName": "${productName}.${ext}",
+    "afterSign": "build/notarize.js",
+    "publish": [
+      "github"
+    ],
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "app.icns",
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist"
+    }
+  }
+}
