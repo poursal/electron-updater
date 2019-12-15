@@ -95,6 +95,7 @@ autoUpdater.on('update-downloaded', (info) => {
   sendStatusToWindow('Update downloaded')
   updatePending = true
 
+  autoUpdater.quitAndInstall()
   // Show message and wait for feedback
   //if ( install immediate ) {
   //  updatePending = false
