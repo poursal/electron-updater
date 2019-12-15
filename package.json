@@ -1,6 +1,6 @@
 {
   "name": "electron-updater",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "mac": {
       "category": "public.app-category.utilities",
       "icon": "app.icns",
+      "target": "dmg",
       "entitlements": "build/entitlements.mac.plist",
       "entitlementsInherit": "build/entitlements.mac.plist"
     }
