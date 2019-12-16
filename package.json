@@ -1,6 +1,6 @@
 {
   "name": "electron-updater",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "email": "poursal@gmail.com"
   },
   "devDependencies": {
-    "electron": "^7.1.5",
+    "electron": "^6.1.5",
     "electron-builder": "^21.2.0",
     "electron-notarize": "^0.2.1"
   },
