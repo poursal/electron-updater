@@ -13,7 +13,7 @@
     "email": "poursal@gmail.com"
   },
   "devDependencies": {
-    "electron": "^6.1.5",
+    "electron": "^9.4.0",
     "electron-builder": "^21.2.0",
     "electron-notarize": "^0.2.1"
   },
